@@ -846,7 +846,7 @@ img {
 }
 
 .fporto img {
-    width: 70%;
+    width: 50%;
     border-radius: 1em;
     margin: 1em auto;
 }
@@ -856,6 +856,11 @@ img {
     flex-direction: column;
     justify-content: center;
     margin-top: 4em;
+}
+
+.fporto a.button.button--flex {
+    width: 8em;
+    align-self: center;
 }
 
 /*==================== rayban ====================*/
