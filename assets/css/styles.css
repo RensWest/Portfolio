@@ -1137,7 +1137,7 @@ img {
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px; ) {
+@media screen and (min-width: 1024px) {
 
     .header,
     .main,
