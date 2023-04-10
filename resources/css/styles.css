@@ -1,0 +1,839 @@
+/* CSS RESET */
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+</style>
+
+/* fix dat alle styling weg gaat */
+{}
+
+/* ROOT */
+:root {
+    --kleur-blauw: #282E48;
+    --kleur-beige: #CEB896;
+    --kleur-donkergrijs: #4D4D4D;
+    --kleur-lichtgrijs: #f3f3f3;
+    --kleur-wit: #FFF;
+    --main-font: 'Quicksand', sans-serif;
+    --main-font-medium: 500;
+    --main-font-semi-bold: 600;
+    --main-font-bold: 700;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 4em 6.25em;
+}
+
+header button {
+    display: none;
+}
+
+header > a > img {
+    margin-right: 6em;
+    width: 1.5em;
+    aspect-ratio: 1/1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    color: var(--kleur-blauw);
+    font-family: var(--main-font);
+    text-decoration: none;
+    font-weight: var(--main-font-semi-bold);
+    margin-right: 4em;
+}
+
+header span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--kleur-blauw);
+    border-radius: 0 0 0 3em;
+    max-height: 59em;
+    margin-right: calc(50% - 50vw);
+}
+
+h1 {
+    font-size: 4.0625em;
+    font-weight: var(--main-font-bold);
+    font-family: var(--main-font);
+    padding: 1em 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: var(--main-font-bold);
+    font-family: var(--main-font);
+    color: var(--kleur-blauw);
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-family: var(--main-font);
+    color: var(--kleur-blauw);
+    font-size: 2.5em;
+}
+
+h4 {
+    font-family: var(--main-font);
+    color: var(--kleur-blauw);
+    font-size: 1.5em;
+}
+
+p {
+    font-family: var(--main-font);
+    font-size: 1em;
+}
+
+a {
+    font-family: var(--main-font);
+    font-size: 1em;
+}
+
+section {
+    padding: 10em 13.5em;
+}
+
+/* streepje voor titel */
+section > div:first-of-type span {
+    height: .4em;
+    width: 2em;
+    border-radius: 5em;
+    background-color: var(--kleur-blauw);
+    margin-right: 1.25em;
+    margin-bottom: 2.2em;
+}
+
+section > div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* blauwe button */
+.blauwe-button {
+    background-color: var(--kleur-blauw);
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    padding: .833em;
+    border-radius: .5em;
+    transition: .33s;
+}
+
+.blauwe-button:hover {
+    background-color: var(--kleur-beige);
+    transition: .33s;
+}
+
+.blauwe-button i {
+    margin-left: 1em;
+}
+
+/* Landing section styling */
+.section-landing {
+    height: calc(67.5em - 18.1em);
+    padding: 0 13.5em;
+    position: relative;
+}
+
+.section-landing > p {
+    color: var(--kleur-donkergrijs);
+    padding: 1em 0;
+    font-size: 1.1em;
+}
+
+.section-landing > p:first-of-type {
+    font-weight: var(--main-font-semi-bold);
+}
+
+.section-landing > p:nth-of-type(2) {
+    font-weight: var(--main-font-medium);
+    padding-bottom: 15em;
+}
+
+.section-landing div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-landing div a {
+    display: flex;
+    background-color: var(--kleur-wit);
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 3em;
+    filter: drop-shadow(2px 2px 4px #000);
+    transition: .33s;
+}
+
+.section-landing div a:hover {
+    filter: drop-shadow(2px 2px 8px #000);
+    transition: .33s;
+}
+
+.section-landing div a i {
+    font-size: 2em;
+    color: var(--kleur-blauw);
+}
+
+.section-landing div p {
+    font-weight: var(--main-font-bold);
+    color: var(--kleur-blauw);
+}
+
+.section-landing img:first-of-type {
+    position: absolute;
+    top: -5em;
+    right: 0;
+    width: 50%;
+}
+
+.section-landing img:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* What do i do section styling */
+.section-what-do-i-do {
+    background-color: var(--kleur-lichtgrijs);
+}
+
+.section-what-do-i-do > div:first-of-type span {
+    background-color: var(--kleur-beige);
+}
+
+.section-what-do-i-do h2 {
+    color: var(--kleur-beige);
+}
+
+.section-what-do-i-do article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.section-what-do-i-do article img {
+    width: 40%;
+    object-fit: cover;
+    height: 100%;
+    filter: drop-shadow(0px 3px 6px rgb(180, 180, 180));
+    border-radius: 2em;
+}
+
+.section-what-do-i-do p {
+    font-size: 3.5em;
+    width: 10.5em;
+    font-weight: var(--main-font-medium);
+}
+
+.bold-beige {
+    color: var(--kleur-beige);
+    font-weight: var(--main-font-bold);
+}
+
+/* What do i use section styling */
+.section-what-do-i-use article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-what-do-i-use article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.5em;
+    height: 30em;
+    background-color: var(--kleur-lichtgrijs);
+    border-radius: 2em;
+    padding: 2.5em;
+    transition: .3s;
+}
+
+.section-what-do-i-use article div:hover {
+    filter: drop-shadow(0px 3px 6px #000);
+    transition: .3s;
+}
+
+.section-what-do-i-use article div img {
+    width: 100%;
+    max-width: 13em;
+    max-height: 13em;
+    min-width: 5em;
+
+    border-radius: 50%;
+    background-color: var(--kleur-beige);
+}
+
+.section-what-do-i-use article div h2 {
+    padding: .5em 0;
+}
+
+/* About me section styling */
+.section-about-me {
+    position: relative;
+    background-color: var(--kleur-blauw);
+}
+
+.section-about-me > div span {
+    background-color: var(--kleur-beige) !important;
+}
+
+.section-about-me h2 {
+    color: var(--kleur-beige);
+}
+
+.section-about-me article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-about-me h3 {
+    color: var(--kleur-wit);
+    margin-bottom: .6em;
+}
+
+.section-about-me h4 {
+    color: var(--kleur-wit);
+    margin-bottom: .2em;
+    margin-top: .5em;
+}
+
+.section-about-me p {
+    color: var(--kleur-wit);
+    margin-bottom: .2em;
+    font-weight: var(--main-font-semi-bold);
+}
+
+.semibold-beige {
+    color: var(--kleur-beige);
+    font-weight: var(--main-font-semi-bold);
+}
+
+.section-about-me i {
+    margin-top: 1em;
+    color: var(--kleur-beige);
+    font-size: 3em;
+}
+
+.section-about-me i:hover {
+    color: var(--kleur-lichtgrijs);
+}
+
+.section-about-me img {
+    background-color: lightcoral;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 30em;
+    border-radius: 2em;
+}
+
+/* Portfolio section styling */
+.section-portfolio {
+    background-color: var(--kleur-lichtgrijs);
+}
+
+.section-portfolio > p {
+    font-size: 2.5em;
+    font-weight: var(--main-font-bold);
+    color: var(--kleur-blauw);
+    margin-bottom: 2em;
+}
+
+.section-portfolio ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    list-style-type: none;
+}
+
+.section-portfolio ul li:first-of-type span { 
+    background-color: var(--kleur-beige);
+}
+.section-portfolio ul li:nth-of-type(2) span {
+    background-color: var(--kleur-blauw);
+}
+.section-portfolio ul li:nth-of-type(3) span {
+    background-color: #75C688;
+}
+.section-portfolio ul li:nth-of-type(4) span {
+    background-color: #6598C4;
+}
+
+.section-portfolio ul li span {
+    width: 100%;
+}
+
+.section-portfolio ul li {
+    transition: .33s;
+}
+
+.section-portfolio ul li:hover {
+    filter: drop-shadow(2px 2px 8px #000);
+    transition: .33s;
+}
+
+.section-portfolio ul li a:focus {
+    border-radius: 2em;
+}
+
+.section-portfolio ul li a span {
+    display: flex;
+    justify-content: center;
+    height: 23em;
+    aspect-ratio: 1860/1080;
+    border-radius: 2em 2em 0 0;
+}
+
+.section-portfolio ul li a span img {
+    aspect-ratio: 1920/1080;
+    padding: 1em;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.section-portfolio ul li a {
+    text-decoration: none;
+}
+
+.section-portfolio ul li a > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em 2em 2em;
+    background-color: var(--kleur-wit);
+    border-radius: 0 0 2em 2em;
+}
+
+.section-portfolio ul li a > div div {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-portfolio ul li h3 {
+    font-size: 2em;
+}
+
+.section-portfolio ul li p {
+    color: var(--kleur-blauw);
+    font-weight: var(--main-font-medium);
+}
+
+.section-portfolio ul li i {
+    font-size: 2em;
+    color: var(--kleur-blauw);
+}
+
+
+/* Contact section styling */
+.section-contact {
+    padding-bottom: 18em;
+}
+
+.section-contact h3 {
+    margin-bottom: 2em;
+}
+
+.section-contact ul li {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+    align-items: center;
+}
+
+.section-contact ul li i {
+    width: 1em;
+    margin-right: 1em;
+    font-size: 2em;
+    color: var(--kleur-beige);
+}
+
+.section-contact ul li > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact ul li a,
+.section-contact ul li > div {
+    text-decoration: none;
+    color: var(--kleur-blauw);
+    font-weight: var(--main-font-medium);
+}
+
+/* footer styling */
+footer {
+    padding: 10em 13.5em 5em 13.5em;
+    position: relative;
+    color: var(--kleur-blauw);
+    font-weight: var(--main-font-semi-bold);
+}
+
+footer span {
+    display: block;
+    height: .2em;
+    width: 100%;
+    background-color: var(--kleur-blauw);
+    border-radius: 10em;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+}
+
+footer div a {
+    color: var(--kleur-blauw);
+    text-decoration: none;
+}
+
+footer img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1875px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .section-landing img:nth-of-type(2) {
+        height: 20em;
+        left: calc(50% - 50vw);
+        right: calc(50% - 50vw);
+        width: 100vw;
+    }
+
+    header span {
+        width: 55%;
+    }
+
+    .section-what-do-i-do,
+    .section-about-me,
+    .section-portfolio,
+    footer {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: calc(13.5em - (50% - 50vw));
+        padding-right: calc(13.5em - (50% - 50vw));
+    }
+
+    footer img {
+        height: 50em;
+        object-fit: fill;
+    }
+
+  }
+
+  @media screen and (max-width: 1545px) {
+    section {
+        padding: 10em 5em;
+    }
+
+    .section-landing {
+        padding: 0 5em;
+    }
+
+    /* What do i do section styling */
+    .section-what-do-i-do article {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        margin-bottom: 4em;
+    }
+
+    .section-what-do-i-do article img {
+        min-width: 40em;
+    }
+
+    /* What do i use section styling */
+    .section-what-do-i-use article {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .section-what-do-i-use article div {
+        width: calc(100% - 5em);
+        max-width: 50em;
+        height: 100%;
+        padding: 2.5em;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;  
+    }
+
+    .section-what-do-i-use article div img { grid-area: 1 / 1 / 3 / 2; }
+    .section-what-do-i-use article div h2 { grid-area: 1 / 2 / 2 / 3; }
+    .section-what-do-i-use article div p { grid-area: 2 / 2 / 3 / 3; }
+
+    /* About me section styling */
+    .section-about-me article {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+
+    /* Portfolio section styling */
+    .section-portfolio ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 60px;
+    }
+}
+
+
+@media screen and (max-width: 955px) {
+    header span {
+        display: none;
+    }
+
+    .section-landing > img:first-of-type {
+        background-color: var(--kleur-blauw);
+        padding: 1em;
+        border-radius: 3em 0 0 3em;
+        height: 30vh;
+        width: auto;
+        top: 21.5em;
+    }
+
+    .section-landing > img:nth-of-type(2) {
+        display: none;
+    }
+
+    .section-landing > p:nth-of-type(2) {
+
+    }
+
+    .section-contact {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    header button {
+        display: block;
+    }
+
+    section {
+        padding: 5em 1em;
+    }
+    
+    .section-landing div {
+        display: none !important;
+    }
+
+    .section-portfolio ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .section-portfolio ul li a span {
+        height: 100%;
+    }
+    
+
+    /* What do i do tekst verkleinen en img naar gewoon 100% breed + padding */
+    .section-what-do-i-do article img {
+        max-width: 100%;
+        min-width: 100%;
+        filter: drop-shadow(0px 3px 6px rgb(180, 180, 180));
+        border-radius: 2em;
+    }
+    
+    .section-what-do-i-do p {
+        font-size: 2em;
+        width: 100%;
+        font-weight: var(--main-font-medium);
+    }
+
+    /* What programs do i use fixen naar gewoon 100% breed + padding */
+    .section-what-do-i-use article div {
+
+    }
+
+    .section-contact {
+        padding-bottom: 0;
+    }
+
+    footer {
+        padding: 10em 6em 3em 6em;
+    }
+
+    /* Navigatie naar kleine nav en section 1 aanpassen naar mobile versie */
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 6em);
+        background-color: var(--kleur-blauw);
+        padding: 5em 1em 1em 1em;
+        gap: 3em;
+        z-index: 2;
+        transition: .5s;
+        transform: translateX(-100vw);
+    }
+
+    .showMenu{
+        transform: translateX(0vw) !important;
+        transition: .5s;
+    }
+
+    .hamburger {
+        position: absolute;
+        z-index: 100;
+        top: 2em;
+        left: 1em;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        display: none !important;
+        color: var(--kleur-lichtgrijs);
+        position: fixed;
+    }
+
+    header button i {
+        color: var(--kleur-blauw);
+        font-size: 2em;
+    }
+    
+    header > a {
+        display: none;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    nav a {
+        color: var(--kleur-wit);
+        font-family: var(--main-font);
+        text-decoration: none;
+        font-weight: var(--main-font-semi-bold);
+        margin: 0;
+    }
+
+
+}
+
+/* mobile */
+@media screen and (max-width: 580px) {
+    header {
+        padding: 2em 1em;
+    }
+
+    header button {
+        background: none;
+        border: none;
+        color: var(--kleur-blauw);
+    }
+
+    header button i {
+        font-size: 2em;
+    }
+
+    .section-landing {
+        padding: 0 1em;
+    }
+
+    .section-landing > img:first-of-type {
+        height: 15em;
+        top: 20em;
+    }
+
+    .section-landing h1 {
+        padding: 0;
+    }
+
+    .section-what-do-i-use article div h2 {
+        font-size: 1.5em;
+        padding: 0;
+        
+    }
+
+    .section-what-do-i-use article div {
+        grid-column-gap: 1em;
+        padding: 1em;
+        width: calc(100% - 2em);
+    }
+
+    footer {
+        padding: 5em 1em 3em 1em;
+    }
+
+    footer img {
+        display: none;
+    }
+}
+
+.portfoliopage {
+    padding: 0 13.5em;
+}
+
+.portfoliopage h1 {
+    padding: 0;
+}
+
+.portfoliopage p {
+    font-weight: var(--main-font-semi-bold);
+}
+
+.portfoliopage iframe,
+.portfoliopage img {
+    width: 100%;
+    filter: drop-shadow(2px 2px 8px #000);
+    border-radius: 2em;
+    margin-top: 3em;
+}
+
+.portfolio_mobileimg {
+    width: 50% !important;
+}
