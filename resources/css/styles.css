@@ -5,10 +5,6 @@ html {
     padding: 0;
 }
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-</style>
-
 /* fix dat alle styling weg gaat */
 {}
 
@@ -354,7 +350,9 @@ section > div:first-of-type {
     background-color: lightcoral;
     aspect-ratio: 1/1;
     width: 100%;
+    height: 100%;
     max-width: 30em;
+    max-height: 30em;
     border-radius: 2em;
 }
 
@@ -377,6 +375,7 @@ section > div:first-of-type {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
     list-style-type: none;
+    max-width: 100%;
 }
 
 .section-portfolio ul li:first-of-type span { 
@@ -659,6 +658,10 @@ footer img {
         display: block;
     }
 
+    header button i:nth-of-type(2) {
+        display: none;
+    }
+
     section {
         padding: 5em 1em;
     }
@@ -716,13 +719,15 @@ footer img {
         padding: 5em 1em 1em 1em;
         gap: 3em;
         z-index: 2;
-        transition: .5s;
+        transition: .33s;
         transform: translateX(-100vw);
+        opacity: 0;
     }
 
     .showMenu{
         transform: translateX(0vw) !important;
-        transition: .5s;
+        transition: .33s;
+        opacity: 1;
     }
 
     .hamburger {
@@ -731,11 +736,13 @@ footer img {
         top: 2em;
         left: 1em;
         cursor: pointer;
+        border: none;
+        background: none;
     }
 
     .closeIcon {
-        display: none !important;
-        color: var(--kleur-lichtgrijs);
+        display: none;
+        color: var(--kleur-wit);
         position: fixed;
     }
 
