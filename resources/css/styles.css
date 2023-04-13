@@ -599,7 +599,7 @@ footer img {
         width: calc(100% - 5em);
         max-width: 50em;
         height: 20em;
-        padding: 1em;
+        padding: 2em;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
