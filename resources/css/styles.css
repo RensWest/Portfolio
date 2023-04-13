@@ -593,18 +593,18 @@ footer img {
     /* What do i use section styling */
     .section-what-do-i-use article {
         flex-direction: column;
-        gap: 2em;
     }
 
     .section-what-do-i-use article div {
         width: calc(100% - 5em);
         max-width: 50em;
-        height: 100%;
-        padding: 2.5em;
+        height: 20em;
+        padding: 1em;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;  
+        grid-template-rows: auto;
+        margin-bottom: 2em; 
     }
 
     .section-what-do-i-use article div img { grid-area: 1 / 1 / 3 / 2; }
