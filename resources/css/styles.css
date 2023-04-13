@@ -417,6 +417,7 @@ section > div:first-of-type {
 }
 
 .section-portfolio ul li a span img {
+    max-width: 95%;
     aspect-ratio: 1920/1080;
     padding: 1em;
     border-radius: 2em;
