@@ -23,6 +23,7 @@ html {
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 header {
@@ -696,11 +697,6 @@ footer img {
         font-weight: var(--main-font-medium);
     }
 
-    /* What programs do i use fixen naar gewoon 100% breed + padding */
-    .section-what-do-i-use article div {
-
-    }
-
     .section-contact {
         padding-bottom: 0;
     }
@@ -822,8 +818,10 @@ footer img {
     }
 }
 
-.portfoliopage {
+.portfoliopage main {
     padding: 0 13.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfoliopage h1 {
@@ -832,16 +830,65 @@ footer img {
 
 .portfoliopage p {
     font-weight: var(--main-font-semi-bold);
+    margin-bottom: 1em;
 }
 
 .portfoliopage iframe,
-.portfoliopage img {
+.portfoliopage main img {
     width: 100%;
     filter: drop-shadow(2px 2px 8px #000);
     border-radius: 2em;
-    margin-top: 3em;
+    margin-top: 2em;
+}
+
+.portfoliopage main a {
+    color: var(--kleur-lichtgrijs);
+    background-color: var(--kleur-blauw);
+    padding: .5em 1em;
+    border-radius: .5em;
+    text-decoration: none;
+    width: fit-content;
 }
 
 .portfolio_mobileimg {
-    width: 50% !important;
+    
+    border-radius: 1em !important;
+}
+
+@media screen and (min-width: 955px) {
+    .portfolio_mobileimg {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .portfoliopage header {
+        padding: 4.5em 2em;
+    }
+
+    .portfoliopage header nav {
+        opacity: 1;
+        transform: translateX(0);
+        background: none !important;
+        position: relative;
+        padding: 0;
+        height: auto;
+    }
+
+    .portfoliopage header a {
+        display: block !important;
+        color: var(--kleur-blauw);
+    }
+    
+    .portfoliopage main {
+        padding: 0 2em;
+    }
+
+
+}
+
+@media screen and (max-width: 955px) {
+    .portfoliopage h1 {
+        font-size: 2em;
+    }
 }
