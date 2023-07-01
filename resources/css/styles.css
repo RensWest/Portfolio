@@ -391,6 +391,9 @@ section > div:first-of-type {
 .section-portfolio ul li:nth-of-type(4) span {
     background-color: #6598C4;
 }
+.section-portfolio ul li:nth-of-type(5) span {
+    background-color: #e29f19;
+}
 
 .section-portfolio ul li span {
     width: 100%;
